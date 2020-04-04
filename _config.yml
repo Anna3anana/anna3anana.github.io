@@ -1,0 +1,41 @@
+# Site settings
+title: Blog - Desktop Application and Web Application
+description: "A blog for sharing thoughts on fiddling with .NET creating Desktop and Web Application"
+url: "https://anna3anana.github.io/"
+ogimage: "img/default-ogimage.png"
+author:
+  name: "Just a girl fiddling with .NET/C#"
+  email: "hi@annaeliasson.com"
+  url: "https://anna3anana.github.io/"
+
+
+# Build settings
+baseurl: /blog # Change this to your relative path (ex: /blog/), or leave just a /
+markdown: kramdown
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 8
+paginate_path: /page:num/
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Custom variables
+version: "1.0.0"
+
+# Options
+custom_header: false
+custom_nav_footer: false
+reverse: false
